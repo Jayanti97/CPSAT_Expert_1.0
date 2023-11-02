@@ -1,0 +1,86 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-11-01T10:00:22.533Z",
+        "line": 10,
+        "name": "Open Godaddy.com and Validate Page Title",
+        "description": "",
+        "id": "validating-functionalities-of-godaddy.com-site;open-godaddy.com-and-validate-page-title;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10786090400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Launch url",
+            "match": {
+              "location": "stepdefs.MyStepdefs.launchUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 397295900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should see the \"https://www.godaddy.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.godaddy.com/\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.MyStepdefs.userShouldSeeThe(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25777200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should validate \"GoDaddy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GoDaddy\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefs.MyStepdefs.userShouldValidate(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@godaddy"
+          }
+        ]
+      }
+    ],
+    "name": "Validating functionalities of GoDaddy.com site",
+    "description": "",
+    "id": "validating-functionalities-of-godaddy.com-site",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/GoDaddy.feature",
+    "tags": [
+      {
+        "name": "@godaddy",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

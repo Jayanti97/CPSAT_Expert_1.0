@@ -1,0 +1,22 @@
+passColor: 7bc043
+failColor: FF3131
+skipColor: FFBF00
+displayFeature: true
+displayScenario: true
+displayDetailed: true
+summaryConfig:
+  title: Web Automation Test Report
+  titleColor: 122620
+  timeColor: 54627B
+  dataBackgroundColor: 122620
+  dial: {badColor: FE2304, averageColor: 7CFC00, goodColor: 4CBB17}
+featureConfig: {totalColor: 282120, durationColor: 145DA0}
+scenarioConfig: {totalColor: 282120, durationColor: 145DA0}
+detailedFeatureConfig: {featureNameColor: 2E5E4E, startEndTimeColor: 0, tagColor: 2E5E4E,
+  dataHeaderColor: FFFFFF, dataBackgroundColor: 122620, totalColor: E6C2BF, durationColor: D6AD60,
+  durationBackgroundColor: 122620}
+detailedScenarioConfig: {featureNameColor: 2E5E4E, scenarioNameColor: 2E5E4E, startEndTimeColor: 0,
+  tagColor: 2E5E4E, dataHeaderColor: FFFFFF, dataBackgroundColor: 122620, totalColor: E6C2BF,
+  durationColor: D6AD60, durationBackgroundColor: 122620, stepChartBarColor: 7f32a8}
+detailedStepHookConfig: {hookTextColor: 2E5E4E, durationColor: 145DA0, errorMsgColor: 0,
+  logMsgColor: 0}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <theme>light</theme>
+        <encoding>UTF-8</encoding>
+        <protocol>http</protocol>
+<!--        <documentTitle>WU</documentTitle>-->
+        <reportName>Automation Test Report</reportName>
+<!--        <reportHeadline>USW</reportHeadline>-->
+        <testViewChartLocation>top</testViewChartLocation>
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+
+                });
+            ]]>
+        </scripts>
+        <styles>
+            <![CDATA[
+
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>
