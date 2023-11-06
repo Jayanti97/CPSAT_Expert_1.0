@@ -43,4 +43,16 @@ public class MyStepdefs  extends practicePage{
         new goDaddySite().validatePage();
         ReportingManager.report("Page is validated", Status.INFO);
     }
+
+    @When("user clicks on menu button")
+    public void userClicksOnMenuButton() {
+        new goDaddySite().clickMenuButton();
+        ReportingManager.report("Menu is clicked", Status.INFO);
+    }
+
+    @Then("user clicks on each menu item and validate pages")
+    public void userClicksOnEachMenuItemAndValidatePages() {
+        new goDaddySite().clickEachMenuItem();
+        ReportingManager.report("Each menu item is clicked and pages are validated", Status.PASS);
+    }
 }

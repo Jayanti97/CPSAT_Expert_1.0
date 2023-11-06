@@ -1205,17 +1205,17 @@ public static WebDriver driver;
 
 
 
-    public static void waitForVisibility(WebElement ele) {
-
-        WebDriverWait wait = getInstance();
-
-        try {
-            wait.until(ExpectedConditions.visibilityOf(ele));
-        } catch (StaleElementReferenceException w) {
-            wait.until(ExpectedConditions.visibilityOf(ele));
-        }
-
-    }
+//    public static void waitForVisibility(WebElement ele) {
+//
+//        WebDriverWait wait = getInstance();
+//
+//        try {
+//            wait.until(ExpectedConditions.visibilityOf(ele));
+//        } catch (StaleElementReferenceException w) {
+//            wait.until(ExpectedConditions.visibilityOf(ele));
+//        }
+//
+//    }
 
 
 //    public void updateImplicitWait(long sec) {
@@ -1226,18 +1226,19 @@ public static WebDriver driver;
     @SneakyThrows
     public static WebDriverWait getInstance()  {
         WebDriverWait wait = null;
-        switch (new PropertyManager().getProps().getProperty("AppPlatform")) {
-            case "Mobile":
-                wait = new WebDriverWait(new DriverManager().getDriver(), TestUtils.WAIT);
-                break;
-            case "Web":
-                wait = new WebDriverWait(new DriverManager().getWebDriver(), TestUtils.WAIT);
-                break;
-        }
+//        switch (new PropertyManager().getProps().getProperty("AppPlatform")) {
+//            case "Mobile":
+//                wait = new WebDriverWait(new DriverManager().getDriver(), TestUtils.WAIT);
+//                break;
+//            case "Web":
+//                wait = new WebDriverWait(new DriverManager().getWebDriver(), TestUtils.WAIT);
+//                break;
+        wait = new WebDriverWait(new DriverManager().getWebDriver(), TestUtils.WAIT);
+
         return wait;
     }
 
-    public WebDriverWait getInstance(int sec) throws IOException {
+    public static WebDriverWait getInstance(int sec) throws IOException {
         WebDriverWait wait = null;
         switch (new PropertyManager().getProps().getProperty("AppPlatform")) {
             case "Mobile":
@@ -1250,14 +1251,14 @@ public static WebDriver driver;
         return wait;
     }
 
-    public void waitForVisibility(WebElement e,int sec)  {
+    public static void waitForVisibility(WebElement e)  {
 
         WebDriverWait wait = null;
-        try {
-            wait = getInstance(sec);
-        } catch (IOException ex) {
-            throw new RuntimeException(ex);
-        }
+//        try {
+//            wait = getInstance(5);
+//        } catch (IOException ex) {
+//            throw new RuntimeException(ex);
+//        }
 
         try {
             wait.until(ExpectedConditions.visibilityOf(e));

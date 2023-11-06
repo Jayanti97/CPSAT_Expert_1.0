@@ -18,7 +18,7 @@ public class PropertyManager {
         InputStream is = null;
         String propsFileName = "";
         switch(getProps("configmaster.properties").getProperty("App")) {
-            case "MakeMyTrip":
+            case "Web":
                 propsFileName="config.properties";
                 App="Web";
                 break;
